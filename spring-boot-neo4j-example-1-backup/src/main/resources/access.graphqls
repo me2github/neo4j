@@ -1,0 +1,62 @@
+schema{
+	query: Query
+}
+
+type Query{
+
+	findAllAccess_G : [Access]
+	findByAccessName(accessName: String, ) : Access
+	findAllAccessWithAccessId(accessId: String) : [Access]
+	findAllAccessRelationship(accessId: String) : [String]
+	findApplicationById(appId: String) : [Application]
+	#getAllAccessForGivenAccountId(accountId: String): [Access]
+	getAllAccessBelongsToApplication(applicationId: String, relationType: String, firstSeen: String): [Access]
+	#getAllAccessFilterOnRelationship(applicationId: String, relationship: BelongsToRelationshipDTO): [Access]
+}
+
+type Application {
+	applicationId: String
+	appName: String
+	accessName: String
+	appShortName: String
+	appType: String
+	access: [Access]
+}
+
+type Access{
+
+	id: String
+	accessId: String
+	longDesc: String
+	accessName: String
+	accessLevel1Id: String
+	applicationId: String
+	accessType: String
+	accessOwner: String
+	application: Application
+
+}
+
+
+
+type Account {
+	id: String
+	applicationId: String
+	accessId1: String
+	accessId2: String
+	accessId3: String
+	accountType: String
+	accountId: String
+	accessName: String
+	#colllectionDate: String
+	userId: String
+	accessAccountId: String
+	accessStatus: String
+	
+}
+
+type BelongsToRelationshipDTO {
+	relationshipType: String
+	firstSeen: String
+	lastSeen: String
+}
