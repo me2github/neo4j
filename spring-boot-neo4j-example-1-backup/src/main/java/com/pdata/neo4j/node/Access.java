@@ -14,7 +14,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NodeEntity(label = "Access")
+@NodeEntity(label = "AccessN")
 @NoArgsConstructor
 @AllArgsConstructor(staticName = "of")
 public class Access {
@@ -48,6 +48,10 @@ public class Access {
 	@Property(name = "ACCESS_OWNER")
 	private String accessOwner;
 
+	@Property(name = "UUID")
+	private String uuid;
+
+	
 	@Relationship(type = "BELONGS_TO", direction = Relationship.OUTGOING)
 	@JsonIgnoreProperties("access")
     private BelongToRelationShip belongToRelationShip;

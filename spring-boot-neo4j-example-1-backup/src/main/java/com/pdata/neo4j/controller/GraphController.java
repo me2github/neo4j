@@ -170,4 +170,9 @@ public class GraphController {
 	 */
 	
 	
+	@GetMapping("/readAndSaveAccessCSVData")
+	private ResponseEntity<Object> readAndSaveCSVData() {
+		appDataService.readAndSaveCSVData(null);
+		return new ResponseEntity<Object>("Data is saved in graphDB", HttpStatus.OK);
+	}
 }

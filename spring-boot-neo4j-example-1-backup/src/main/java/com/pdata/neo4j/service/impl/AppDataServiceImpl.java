@@ -10,6 +10,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.pdata.neo4j.node.Access;
 import com.pdata.neo4j.node.Account;
@@ -17,6 +18,8 @@ import com.pdata.neo4j.node.Application;
 import com.pdata.neo4j.node.dto.AccessDTO;
 import com.pdata.neo4j.node.dto.ApplicationDTO;
 import com.pdata.neo4j.node.dto.BelongsToRelationshipDTO;
+import com.pdata.neo4j.pipeline.NormalizeData;
+import com.pdata.neo4j.pipeline.model.AppMetadata;
 import com.pdata.neo4j.repository.AccessRepository;
 import com.pdata.neo4j.repository.AccountRepository;
 import com.pdata.neo4j.repository.ApplicationRepository;
@@ -159,5 +162,21 @@ public class AppDataServiceImpl implements AppDataService {
 		List<Access> accessList = appRepository.getAllAccessFilterOnRelationship(applicationId, firstSeen, lastSeen, relationType);
 		return accessList;
 	}
-
+	
+	@Override
+	public void readAndSaveCSVData(MultipartFile readDataFile) {
+		
+		//to resolve the owner Type
+		Map<String, AppMetadata> mapData = readAppMetaDataFromGraphDB("applicationId");
+		
+		List<Access> accessList = NormalizeData.normalizeAccessData(mapData);
+		accessRepository.saveAll(accessList);
+	}
+	
+	public Map<String, AppMetadata> readAppMetaDataFromGraphDB(String applicationId) {		
+		Map<String, AppMetadata> mapData = new HashMap<>();
+		
+		
+		return mapData;
+	}
 }

@@ -18,7 +18,9 @@ public class Application1Processor implements AgentProcessor <Application1>{
 		
 		
 		//CSV Writer
-		
+		appListData.forEach(item -> {
+			
+		});
 		
 		
 		//Transfer CSV file to centralized server

@@ -1,45 +1,4 @@
-"ACCESS_LEVEL_1_ID","ACCESS_ID","ACCESS_NAME","ACCESS_OWNER","SHORT_DESC","LONG_DESC","ACCESS_TYPE","APPLICATION_ID","COLLECTION_DATE","ACCESS_CLASSIFICATION","CAS1","CAS2","CAS3","CAS4","CAS5","IN_REQUEST"
-10406716,"5A1C5F33-AE74-43A8-8B1F-9717CBAFD7BA","Finance Supervisor level","","Same as Finance User Level. Excluding AP invoice matching and AR Invoicing
-","Same as Finance User Level. Excluding AP invoice matching and AR Invoicing
-","Group",4,20-JUN-20,"","","","","","",""
-10406540,"3","manager","","User cant take Re-Forecast and Save actions. But user can apply Manual Overrides for all Planning and Live promotions.User can also enable NMO for Planning promotions.
-","User cant take Re-Forecast and Save actions. But user can apply Manual Overrides for all Planning and Live promotions.User can also enable NMO for Planning promotions.
-","AppRole",3,20-JUN-20,"","","","","","",""
-10406541,"4","food_supply_user","","User can take Re-Forecast and Save actions only on planning promotions.If the planning promotion is NMO active then user can take Re-Forecast and Save actions 21 days before of that planning promotion start date.
-","User can take Re-Forecast and Save actions only on planning promotions.If the planning promotion is NMO active then user can take Re-Forecast and Save actions 21 days before of that planning promotion start date.
-","AppRole",3,20-JUN-20,"","","","","","",""
-10406542,"5","food_supply_manager","","Cant  take Re-Forecast and Save actions. But user can apply Manual Overrides only for Planning Promotions. 
-","Cant  take Re-Forecast and Save actions. But user can apply Manual Overrides only for Planning Promotions. 
-","AppRole",3,20-JUN-20,"","","","","","",""
-10406544,"7","weights_priority_manager","","User can only see/edit the Weights Priority parameters.
-","User can only see/edit the Weights Priority parameters.
-","AppRole",3,20-JUN-20,"","","","","","",""
-10406709,"388ED9AE-3BB3-461B-AFE4-D68DED806F83","Everyone","","No Access
-","No Access
-","Group",4,20-JUN-20,"","","","","","",""
-10406710,"A55900D4-FA90-40F5-9189-2E11778F9071","Stock Control","","To Raise/edit/view sales orders. To Raise/edit/view purchase orders. View Stock/sales/inventory views
-","To Raise/edit/view sales orders. To Raise/edit/view purchase orders. View Stock/sales/inventory views
-","Group",4,20-JUN-20,"","","","","","",""
-10406711,"33A27E39-56F5-4D5A-B6E4-57EBCDCE5D9E","Buyer","","Access to Supplier Pricing cube. Access to Customer Price cube                        
-","Access to Supplier Pricing cube. Access to Customer Price cube                        
-","Group",4,20-JUN-20,"","","","","","",""
-10406712,"F3AE826A-F6C0-4000-A515-FF945BD85AC7","Logistics","","Supplier Logistic Cubes, Load builder, Views of Stock/sales/inventory","Supplier Logistic Cubes, Load builder, Views of Stock/sales/inventory","Group",4,20-JUN-20,"","","","","","",""
-10406713,"64248048-4E0D-4B1F-9B98-205CA96CE47F","Admin","","Access to all areas of Prophet. All setup functions.
-","Access to all areas of Prophet. All setup functions.
-","Group",4,20-JUN-20,"","","","","","",""
-10406714,"2DEAF846-8665-42CB-AEA7-BAC0AC9EABEB","Finance Super level","","Same as Finance User Level. Excluding AP invoice matching and AR Invoicing
-","Same as Finance User Level. Excluding AP invoice matching and AR Invoicing
-","Group",4,20-JUN-20,"","","","","","",""
-10406715,"FE090EB7-5D76-4085-B8C3-C7F64A1AC06A","Finance User level","","Stock level and sales order at view level only, Finance reports, Loadbuilder, AP invoice matching and AR Invoicing. Cube � view access only. Cannot enter POs or SOs","Stock level and sales order at view level only, Finance reports, Loadbuilder, AP invoice matching and AR Invoicing. Cube � view access only. Cannot enter POs or SOs","Group",4,20-JUN-20,"","","","","","",""
-10406717,"16604EF7-433E-4A6B-B1F6-7DA3511B11D3","Finance General Ledger","","Same as Finance User Level 
-","Same as Finance User Level 
-","Group",4,20-JUN-20,"","","","","","",""
-10406538,"1","admin","","Poweruser with access to all admin functions within the application.
-","Poweruser with access to all admin functions within the application.
-","AppRole",3,20-JUN-20,"","","","","","",""
-10406539,"2","user","","User can Re-Forecast and Save all Planning and Live promotions. 
-","User can Re-Forecast and Save all Planning and Live promotions. 
-","AppRole",3,20-JUN-20,"","","","","","",""
-10406543,"6","viewer","","User can view the application pages and cannot take any action on the system.
-","User can view the application pages and cannot take any action on the system.
-","AppRole",3,20-JUN-20,"","","","","","",""
+ACCESS_LEVEL_1_ID,ACCESS_ID,ACCESS_NAME,ACCESS_OWNER,SHORT_DESC,LONG_DESC,ACCESS_TYPE,APPLICATION_ID,COLLECTION_DATE,ACCESS_CLASSIFICATION,CAS1,CAS2,CAS3,CAS4,CAS5,IN_REQUEST
+10406716,Acc-1,Finance Supervisor level,INE1234,Test short desc,long descritpion,Group,1,20-JUN-20,,,,,,,
+10406540,Acc-2,manager,INE1234,Test short desc,long descritpion,AppRole,3,20-JUN-20,,,,,,,
+10406540,Acc-3,manager,INE1235,Test short desc,long descritpion,AppRole,3,20-JUN-20,,,,,,,

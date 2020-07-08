@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.pdata.neo4j.node.Access;
 import com.pdata.neo4j.node.Application;
@@ -40,5 +41,7 @@ public interface AppDataService {
 	public List<Access> getAllAccessBelongsToApplication(String query, String relationType, String firstSeen);
 
 	public List<Access> getAllAccessFilterOnRelationship(String applicationId, BelongsToRelationshipDTO relationship);
+
+	void readAndSaveCSVData(MultipartFile readDataFile);
 
 }
